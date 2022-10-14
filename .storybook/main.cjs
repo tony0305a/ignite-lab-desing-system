@@ -7,7 +7,6 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
-    '@storybook/addon-a11y'
   ],
   "framework": "@storybook/react",
   "core": {
@@ -16,9 +15,9 @@ module.exports = {
   "features": {
     "storyStoreV7": true
   },
-  viteFinal:(config, { configType }) => {
+  viteFinal: (config, { configType }) => {
     if (configType === 'PRODUCTION') {
-      config.base = '/ignite-lab-design-system/'
+      config.base = "/ignite-lab-desing-system/"
     }
 
     return config
