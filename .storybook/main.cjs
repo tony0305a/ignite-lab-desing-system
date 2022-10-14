@@ -1,5 +1,3 @@
-const tsconfigPaths = require('vite-tsconfig-paths');
-
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -19,7 +17,6 @@ module.exports = {
     "storyStoreV7": true
   },
   async viteFinal(config, { configType }){
-    config.plugins.push(tsconfigPaths.default());
     if (configType === 'PRODUCTION') {
       config.base = '/ignite-lab-design-system/'
     }
